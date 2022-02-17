@@ -16,6 +16,8 @@ from pathlib import Path
 import os
 import django_heroku
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -35,6 +37,7 @@ ALLOWED_HOSTS = [
 
 import dj_database_url
 import os
+
 
 DATABASE_LOCAL = {
     'default': {
@@ -67,7 +70,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "graphene_django",
+    'cloudinary',
+    #'cloudinary_storage',
     'corsheaders',
+
     'api_graphql',
     'categories',
     'orders',
@@ -184,3 +190,10 @@ AUTH_USER_MODEL = 'profiles.UserProfile'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+#     'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+#     'API_SECRET': os.getenv('CLOUDINARY_API_SECRET')
+# }
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
