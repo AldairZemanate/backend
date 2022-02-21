@@ -15,7 +15,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
-
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -69,8 +70,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "graphene_django",
-    'cloudinary',
     'cloudinary_storage',
+    'cloudinary',
     'corsheaders',
 
     'api_graphql',
@@ -189,6 +190,14 @@ AUTH_USER_MODEL = 'profiles.UserProfile'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+
+cloudinary.config( 
+  cloud_name = "unicauca", 
+  api_key = "413654523827846", 
+  api_secret = "ot99WovNoABGUkJTiiSBWQEs9xg",
+  secure = true
+)
+
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
     'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
