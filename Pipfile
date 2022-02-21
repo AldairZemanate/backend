@@ -16,6 +16,8 @@ dj-database-url = "*"
 psycopg2 = "==2.9.3"
 django-cors-headers = "*"
 django-admin-interface = "*"
+cloudinary==1.29.0
+django-cloudinary-storage==0.3.0
 
 [dev-packages]
 
