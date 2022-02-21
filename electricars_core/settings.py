@@ -69,7 +69,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "graphene_django",
     #'cloudinary_storage',
-    'cloudinary',
+    #'cloudinary',
     'corsheaders',
 
     'api_graphql',
