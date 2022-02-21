@@ -68,7 +68,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "graphene_django",
-    'cloudinary_storage',
+    #'cloudinary_storage',
     'cloudinary',
     'corsheaders',
 
