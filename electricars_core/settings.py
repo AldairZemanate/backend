@@ -68,8 +68,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "graphene_django",
-    #'cloudinary_storage',
-    #'cloudinary',
+    'cloudinary_storage',
+    'cloudinary',
     'corsheaders',
 
     'api_graphql',
@@ -191,10 +191,10 @@ django_heroku.settings(locals())
 
 
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
-#     'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
-#     'API_SECRET': os.getenv('CLOUDINARY_API_SECRET')
-# }
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET')
+}
 
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
