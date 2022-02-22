@@ -55,7 +55,10 @@ DATABASES = os.environ.get('DATABASE_PRODUCTION', DATABASE_LOCAL)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-
+DEBUG = True
+CLOUDINARY_CLOUD_NAME = 'unicauca'
+CLOUDINARY_API_KEY = '413654523827846'
+CLOUDINARY_API_SECRET = 'ot99WovNoABGUkJTiiSBWQEs9xg'
 # Application definition
 
 INSTALLED_APPS = [
@@ -198,3 +201,4 @@ CLOUDINARY_STORAGE = {
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
