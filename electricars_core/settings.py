@@ -72,7 +72,7 @@ INSTALLED_APPS = [
     'corsheaders',    
     'cloudinary',
 
-    
+
 
     'api_graphql',
     'categories',
@@ -189,7 +189,6 @@ AUTH_USER_MODEL = 'profiles.UserProfile'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-django_heroku.settings(locals())
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'unicauca',
