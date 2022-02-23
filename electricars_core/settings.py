@@ -72,6 +72,8 @@ INSTALLED_APPS = [
     'corsheaders',    
     'cloudinary',
 
+    
+
     'api_graphql',
     'categories',
     'orders',
