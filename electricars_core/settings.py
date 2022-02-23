@@ -194,9 +194,11 @@ django_heroku.settings(locals())
 # CLOUDINARY_API_SECRET = 'ot99WovNoABGUkJTiiSBWQEs9xg'
 
 CLOUDINARY_STORAGE = {
+    'DEBUG':'True',
     'CLOUD_NAME': 'unicauca',
     'API_KEY': '413654523827846',
     'API_SECRET': 'ot99WovNoABGUkJTiiSBWQEs9xg'
+
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
