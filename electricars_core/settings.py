@@ -66,10 +66,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',   
     "graphene_django",
-    'corsheaders',
-    'cloudinary_storage',
+    'corsheaders',    
     'cloudinary',
 
     'api_graphql',
