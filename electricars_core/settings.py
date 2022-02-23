@@ -66,10 +66,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "graphene_django",
-    'corsheaders',
     'cloudinary_storage',
     'cloudinary',
+    "graphene_django",
+    'corsheaders',
+    
 
     'api_graphql',
     'categories',
@@ -187,10 +188,6 @@ AUTH_USER_MODEL = 'profiles.UserProfile'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
-
-# CLOUDINARY_CLOUD_NAME = 'unicauca'
-# CLOUDINARY_API_KEY = '413654523827846'
-# CLOUDINARY_API_SECRET = 'ot99WovNoABGUkJTiiSBWQEs9xg'
 
 CLOUDINARY_STORAGE = {
     'DEBUG':'True',
