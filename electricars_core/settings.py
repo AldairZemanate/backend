@@ -193,7 +193,6 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'unicauca',
     'API_KEY': '413654523827846',
     'API_SECRET': 'ot99WovNoABGUkJTiiSBWQEs9xg'
-
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
