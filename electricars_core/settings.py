@@ -15,7 +15,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
-import cloudinary_storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -190,14 +189,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
 
-CLOUDINARY_CLOUD_NAME = 'unicauca'
-CLOUDINARY_API_KEY = '413654523827846'
-CLOUDINARY_API_SECRET = 'ot99WovNoABGUkJTiiSBWQEs9xg'
+# CLOUDINARY_CLOUD_NAME = 'unicauca'
+# CLOUDINARY_API_KEY = '413654523827846'
+# CLOUDINARY_API_SECRET = 'ot99WovNoABGUkJTiiSBWQEs9xg'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
-    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
-    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET')
+    'CLOUD_NAME': 'unicauca',
+    'API_KEY': '413654523827846',
+    'API_SECRET': 'ot99WovNoABGUkJTiiSBWQEs9xg'
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
