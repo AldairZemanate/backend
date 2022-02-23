@@ -189,7 +189,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
 
 CLOUDINARY_STORAGE = {
-    'DEBUG':'True',
     'CLOUD_NAME': 'unicauca',
     'API_KEY': '413654523827846',
     'API_SECRET': 'ot99WovNoABGUkJTiiSBWQEs9xg'
