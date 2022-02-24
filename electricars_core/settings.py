@@ -37,7 +37,6 @@ ALLOWED_HOSTS = [
 import dj_database_url
 import os
 
-
 DATABASE_LOCAL = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
