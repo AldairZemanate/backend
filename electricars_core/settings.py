@@ -148,6 +148,8 @@ CORS_ORIGIN_WHITELIST = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+
+django_heroku.settings(locals())
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
