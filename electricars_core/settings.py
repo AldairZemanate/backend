@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
 
     '0.0.0.0',
     'localhost',
-    'https://electricars.herokuapp.com/',
+    'https://electricars-back.herokuapp.com/',
     '127.0.0.1',
 
 ]
