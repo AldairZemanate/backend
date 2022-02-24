@@ -189,7 +189,6 @@ AUTH_USER_MODEL = 'profiles.UserProfile'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'unicauca',
     'API_KEY': '413654523827846',
